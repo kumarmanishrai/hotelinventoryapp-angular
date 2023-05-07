@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Room } from './rooms';
+import { Room, RoomList } from './rooms';
 
 @Component({
   selector: 'hinv-rooms',
@@ -22,6 +22,45 @@ export class RoomsComponent {
     bookedRooms: 5,
   }
 
+
+  roomList : RoomList[] = [
+    {
+    roomNumber: 1,
+    roomType: "deluxe",
+    amenities: "Ac, Wifi, TV",
+    price: 500,
+    photos: 'https://images.unsplash.com/coder',
+    checkinTime: new Date(),
+    checkoutTime: new Date(),
+  },
+  {
+    roomNumber: 2,
+    roomType: "deluxe",
+    amenities: "Ac, Wifi, TV",
+    price: 5400,
+    photos: 'https://images.unsplash.com/coder',
+    checkinTime: new Date(),
+    checkoutTime: new Date(),
+  },
+  {
+    roomNumber: 3,
+    roomType: "deluxe",
+    amenities: "Ac, Wifi, TV",
+    price: 5500,
+    photos: 'https://images.unsplash.com/coder',
+    checkinTime: new Date(),
+    checkoutTime: new Date(),
+  },
+  {
+    roomNumber: 4,
+    roomType: "deluxe",
+    amenities: "Ac, Wifi, TV",
+    price: 1500,
+    photos: 'https://images.unsplash.com/coder',
+    checkinTime: new Date(),
+    checkoutTime: new Date(),
+  },
+]
   
   toggle() {
     this.hideRooms = !this.hideRooms
